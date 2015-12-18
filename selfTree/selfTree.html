@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    
+	<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="selfTree.js"></script>
+    <link rel="stylesheet" href="selfTree.css"/>
+</head>
+<body>
+    <div id="container"></div>
+	<!-- <div id="tree-region">
+            <div class="btn-group">
+                <span class="btn_group_span">下拉</span>
+                <span class="caret"></span>
+            </div>
+            <div class="tree-menu">
+                <ul>
+                    <li>
+                        <div><span>一级任务</span></div>
+                        <ul>
+                            <li><span>二级任务</span></li>
+                            <li><span>二级任务名称显示</span></li>
+                            <li><span>二级任务名称显示1</span></li>
+                            <li><span>二级任务名称显示2</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>
+                            <span>一级任务</span>
+                        </div>
+                        <ul>
+                            <li><span>二级任务</span></li>
+                            <li><span>二级任务名称显示</span></li>
+                        </ul>
+                    </li>
+                    <li><div><span>一级任务</span></div></li>
+                    <li><div><span>一级任务</span></div></li>
+                    <li><div><span>一级任务</span></div></li>
+                </ul>
+            </div>
+        </div> -->
+</body>
+</html>
+<script type="text/javascript">
+    var zNodes = [
+        {
+            name: "一级任务", 
+            children: [
+                {name: "二级任务",value:"1"},
+                {name: "二级任务名称显示",value:"12", selected: true},
+                {name: "二级任务名称显示1",value:"123"},
+                {name: "二级任务名称显示2",value:"1234", selected: true}
+            ]
+        },
+        {
+            name: "一级任务",
+            children: [
+                {name: "二级任务",value:"12345"},
+                {name: "二级任务名称显示",value:"123456"}
+            ]
+        },
+        {
+            name: "一级任务"
+        },
+        {
+            name: "一级任务"
+        },
+        {
+            name: "一级任务"
+        }
+    ];
+
+    SelfSelectTree.init({
+        contentId: 'container', //容器Id
+        data: zNodes, //json数据
+        open: true //是否展开
+    });
+</script>

@@ -1,0 +1,88 @@
+body,div,span,input,ul,li,img{
+	margin: 0;
+	padding: 0; 
+}
+#tree-region ul,#tree-region li{
+	list-style: none;
+}
+#tree-region{
+	width: 284px;
+	margin: 100px auto;
+}
+#tree-region .btn-group{
+	position: relative;
+	width: 246px;
+	height: 20px;
+ 	padding: 5px 18px;
+	line-height: 20px;
+	border: 1px solid #C8C8C8;
+    border-radius: 2px;
+    color: #323232;
+    font-size: 14px;
+    font-family: '宋体';
+    font-weight: bold;
+}
+#tree-region .btn-group:hover{
+	cursor: pointer;
+}
+#tree-region .caret{
+	position: absolute;
+	top: 50%;
+	right: 13px;
+	margin-top: -2px;
+	display: inline-block;
+    vertical-align: middle;
+    border-top: 5px dashed #2461D1;
+    border-top: 5px solid \9;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+#tree-region .tree-menu{
+	display: none;
+ 	position: absolute;
+	z-index: 99;
+	width: 264px;
+	padding: 9px;
+	margin-top: 1px;
+	background: #fff;
+	border-radius: 2px;
+	/*border: 1px solid #6C6C6C;*/
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+#tree-region ul{
+	font-size: 12px;
+	font-family: '宋体';
+	color: #323232;
+}
+#tree-region li span{
+	display: block;
+	height: 24.5px;
+	line-height: 24.5px;
+	cursor: pointer;
+	padding-left: 20px;
+}
+#tree-region li span.open{
+    background: url(image/icon.png) no-repeat -23px -34px;
+}
+#tree-region li span.close{
+    background: url(image/icon.png) no-repeat -23px -11px;  
+}
+#tree-region li.sj span{
+	margin-left: 25px;
+    background: url(image/icon.png) no-repeat -20px -64px;
+    padding-left: 25px;
+}
+#tree-region li.sj:last-child span{
+	margin-left: 25px;
+    background: url(image/icon.png) no-repeat -20px -90px;
+    padding-left: 25px;
+}
+#tree-region .tree-menu ul li div:hover{
+	background: #E4F0FF;
+}
+#tree-region .tree-menu ul li ul li:hover{
+	background: #E4F0FF;
+}
